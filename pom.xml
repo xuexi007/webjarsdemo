@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.offcn</groupId>
+    <artifactId>webjars-demo</artifactId>
+    <version>1.0</version>
+
+    <build>
+        <resources>
+            <resource>
+                <!--指定文件所在原始目录-->
+                <directory>${project.basedir}/src/main/resources</directory>
+                <!--设置编译成jar包后，要拷贝到目录-->
+                <targetPath>${project.build.outputDirectory}/META-INF/resources/webjars</targetPath>
+            </resource>
+        </resources>
+    </build>
+
+</project>
